@@ -10,6 +10,8 @@ import PredictPage from "./pages/PredictPage";
 import Dashboard from "./pages/Dashboard";
 import BMIPage from "./pages/BMIPage";
 import SymptomsPage from "./pages/SymptomsPage";
+import MedicinePage from "./pages/MedicinePage";
+import PrescriptionPage from "./pages/PrescriptionPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/bmi" element={<BMIPage />} />
           <Route path="/symptoms" element={<SymptomsPage />} />
+          <Route path="/medicines" element={<MedicinePage />} />
+          <Route path="/prescription" element={<PrescriptionPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Activity, Menu, X, Heart, Brain, Droplets, BarChart3, Calculator, Stethoscope } from "lucide-react";
+import { Activity, Menu, X, Heart, Brain, Droplets, BarChart3, Calculator, Stethoscope, Pill, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -9,6 +9,8 @@ const navLinks = [
   { to: "/predict/diabetes", label: "Diabetes", icon: Droplets },
   { to: "/predict/heart", label: "Heart", icon: Heart },
   { to: "/predict/parkinsons", label: "Parkinson's", icon: Brain },
+  { to: "/medicines", label: "Medicines", icon: Pill },
+  { to: "/prescription", label: "Prescription", icon: FileText },
   { to: "/dashboard", label: "Dashboard", icon: BarChart3 },
   { to: "/bmi", label: "BMI", icon: Calculator },
   { to: "/symptoms", label: "Symptoms", icon: Stethoscope },
